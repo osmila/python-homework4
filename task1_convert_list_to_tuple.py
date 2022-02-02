@@ -2,8 +2,9 @@ import random
 import string
 
 
-def generate_list_random(numbers_exist=True, string_exist=False, string_max_length=5):
-    length = random.randrange(1, 20)
+def generate_list_random(numbers_exist=True, string_exist=False,
+                         string_max_length=5, list_min_length=1, list_max_length=20):
+    length = random.randrange(list_min_length, list_max_length)
     my_list = list()
     if numbers_exist == True and string_exist == False:
         for _ in range(length):
