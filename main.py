@@ -43,9 +43,16 @@ import task8_custom_union
 # print('\nTask 6: Find the difference between 2 sets:')
 # task6_find_sets_diff.find_sets_diff()
 
-# Task 8:
-# Реализовать логику Union для двух списков (list), проверить работу
-# алгоритма на set.union
-print('\nTask 8: Custom union function:')
-test_sets_list = generate_random_data.create_list_of_sets(string_add=False)
-task8_custom_union.custom_union(test_sets_list)
+# Task 7:
+# Напишите программу, которая удаляет пересечение 2-го набора
+# из 1-го набора.
+print('\nTask 7: Delete the difference between 2 sets from 1st one:')
+task6_find_sets_diff.delete_diff_set()
+
+#
+# # Task 8:
+# # Реализовать логику Union для двух списков (list), проверить работу
+# # алгоритма на set.union
+# print('\nTask 8: Custom union function:')
+# test_sets_list = generate_random_data.create_list_of_sets(string_add=False)
+# task8_custom_union.custom_union(test_sets_list)
