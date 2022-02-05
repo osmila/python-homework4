@@ -35,3 +35,8 @@ def create_list_of_tuples(tuples_max_count=5, string_add=True):
         temp_list = generate_list_random(string_exist=string_add, list_min_length=2, list_max_length=6)
         list_tuples.append(tuple(temp_list))
     return list_tuples
+
+
+def create_set(string_add=True):
+    temp_list = generate_list_random(string_exist=string_add, list_min_length=2, list_max_length=10)
+    return set(temp_list)
