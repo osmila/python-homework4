@@ -40,3 +40,12 @@ def create_list_of_tuples(tuples_max_count=5, string_add=True):
 def create_set(string_add=True):
     temp_list = generate_list_random(string_exist=string_add, list_min_length=2, list_max_length=10)
     return set(temp_list)
+
+
+def create_list_of_sets(sets_max_count=5, string_add=True):
+    sets_count = random.randrange(1, sets_max_count)
+    list_sets = list()
+    for i in range(sets_count):
+        temp_list = generate_list_random(string_exist=string_add, list_min_length=2, list_max_length=6)
+        list_sets.append(set(temp_list))
+    return list_sets

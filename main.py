@@ -1,9 +1,11 @@
+import generate_random_data
 import task1_convert_list_to_tuple
 import task2_change_last_elm_tuple
 import task3_sum_tuples_values
 import task4_value_in_set_exists
 import task5_sets_have_common_values
 import task6_find_sets_diff
+import task8_custom_union
 
 # # Task 1:
 # # Напишите программу для преобразования списка в кортеж
@@ -34,9 +36,16 @@ import task6_find_sets_diff
 # # заданных набора (set) общих элементов.
 # print('\nTask 5: Check if 2 sets have common values:')
 # task5_sets_have_common_values.check_2_sets_contain_common_values()
+#
+# # Task 6:
+# # Напишите программу для поиска элементов в данном наборе A
+# # (set), которых нет в другом наборе B.
+# print('\nTask 6: Find the difference between 2 sets:')
+# task6_find_sets_diff.find_sets_diff()
 
-# Task 6:
-# Напишите программу для поиска элементов в данном наборе A
-# (set), которых нет в другом наборе B.
-print('\nTask 6: Find the difference between 2 sets:')
-task6_find_sets_diff.find_sets_diff()
+# Task 8:
+# Реализовать логику Union для двух списков (list), проверить работу
+# алгоритма на set.union
+print('\nTask 8: Custom union function:')
+test_sets_list = generate_random_data.create_list_of_sets(string_add=False)
+task8_custom_union.custom_union(test_sets_list)
