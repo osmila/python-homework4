@@ -1,6 +1,7 @@
 import task1_convert_list_to_tuple
 import task2_change_last_elm_tuple
 import task3_sum_tuples_values
+import task4_value_in_set_exists
 
 # Task 1:
 # Напишите программу для преобразования списка в кортеж
@@ -17,6 +18,11 @@ import task3_sum_tuples_values
 # Task 3:
 # Напишите программу для поэлементного вычисления суммы
 # заданных кортежей. Результатом должен быть кортеж.
+# print('\nTask 3: Calculate sum of tuples values:')
+# task3_sum_tuples_values.sum_tuples_elements()
 
-print('\nTask 3: Calculate sum of tuples values:')
-task3_sum_tuples_values.sum_tuples_elements()
+# Task 4:
+# Напишите программу, которая проверяет, присутствует ли А в
+# наборе или нет. А вводится с клавиатуры
+print('\nTask 4: Check if entered value exists in the set:')
+task4_value_in_set_exists.check_value_in_set_exists()
